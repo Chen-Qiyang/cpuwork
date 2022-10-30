@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="426.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cpu_scheduling.HelloController">
+    <children>
+        <TableView fx:id="table" prefHeight="323.0" prefWidth="600.0">
+            <columns>
+                <TableColumn fx:id="nameCol" prefWidth="92.0" text="进程名称" />
+                <TableColumn fx:id="arrivalTimeCol" text="到达时间" />
+                <TableColumn fx:id="runTimeCol" prefWidth="102.0" text="估计运行时间" />
+                <TableColumn fx:id="priorityNumCol" prefWidth="117.0" text="优先级数" />
+                <TableColumn fx:id="statusCol" prefWidth="199.0" text="进程状态" />
+            </columns>
+        </TableView>
+        <Button layoutX="130.0" layoutY="385.0" mnemonicParsing="false" onAction="#newPCB" text="创建进程" />
+        <Button layoutX="380.0" layoutY="385.0" mnemonicParsing="false" onAction="#Scheduling" prefHeight="27.0" prefWidth="83.0" text="调度一次" />
+        <TextField fx:id="numbers" layoutX="342.0" layoutY="336.0" prefHeight="27.0" prefWidth="52.0" />
+        <Label layoutX="8.0" layoutY="336.0" prefHeight="27.0" prefWidth="329.0" text="请输入你想创建的进程数目，进程信息由程序自动生成：" />
+    </children>
+</Pane>
